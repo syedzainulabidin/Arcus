@@ -1,0 +1,111 @@
+body {
+    background: var(--light);
+}
+
+nav {
+    /* background: linear-gradient(
+        to bottom,
+        var(--dark),
+        var(--light),
+        #00213500
+    ); */
+    width: 100dvw;
+    height: 70px;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    .title {
+        font-size: 25px;
+    }
+    .menu > a {
+        margin: 0px 5px;
+    }
+    .menu :last-child {
+        padding: 10px;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--light);
+    gap: 5px;
+    h1 {
+        font-size: 60px;
+        text-align: left;
+        text-shadow: 3px 3px 0px var(--dark);
+    }
+    .btn {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+}
+
+.main > .vector {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.login-register {
+    .form-control {
+        width: 100%;
+        max-width: 600px;
+        form {
+            display: flex;
+            flex-direction: column;
+            input,
+            textarea {
+                border-radius: 3px;
+                outline: none;
+                border: none;
+                padding: 5px;
+                margin: 3px 0px;
+                font-size: 17px;
+            }
+            input {
+                height: 40px;
+                color: var(--dark);
+            }
+            .input-wrapper {
+                position: relative;
+                width: 100%;
+                input {
+                    width: 100%;
+                }
+                .icon {
+                    font-size: 25px;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translate(0%, -50%);
+                }
+                #username-status {
+                    position: absolute;
+                    right: 0px;
+                    top: 50%;
+                    transform: translate(0%, -50%);
+                }
+            }
+            input[type="submit"] {
+                box-shadow: 7px 7px 0px var(--dark);
+                color: var(--neutral);
+            }
+        }
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
